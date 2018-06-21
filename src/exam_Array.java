@@ -20,6 +20,10 @@ public class exam_Array {
 			first_Str[i] = sc.nextLine();
 		}
 		
+		/*for(String a:first_Str) {
+			System.out.println(a);
+		}*/
+		
 		for(i = 0 ; i< first_Str.length; i++) {
 			System.out.print((i+1)+"번째 값 > "+first_Str[i]);
 			System.out.println();
@@ -33,7 +37,13 @@ public class exam_Array {
 			}
 		}
 		System.out.println("String_OutPut>");
-
+		
+		/*for (String[] a : Str ) {
+			for(String b : a ) {
+				System.out.println(b);
+			}
+		}*/
+	
 		for (i = 0; i < Str.length; i++) {
 			System.out.println(i+"행의 배열의 값");
 			if (i <= Str.length) {
@@ -50,6 +60,8 @@ public class exam_Array {
 		// int 형 1차원 배열 
 		for ( i = 0 ; i < first_number.length ; i ++) {
 			System.out.printf("%d 번째 숫자를 넣어 주세요.(남은횟수: %d)\n",(i+1),(first_number.length-i));
+			int output = sc.nextInt();
+			first_number[i] = output;
 		}
 		for ( i = 0 ; i < first_number.length ; i++) {
 			System.out.printf("%d 번째 값 > %d\n",(i+1),first_number[i]);
@@ -62,7 +74,7 @@ public class exam_Array {
 				number[a][b] = sc.nextInt();
 			}
 		}
-		System.out.println("Int_OutPut>");
+		System.out.println("Int_OutPut >");
 		for (int a = 0 ; a < number.length; a++) {
 			if(a<=number.length) {
 				System.out.println();
