@@ -2,16 +2,22 @@ import java.util.Scanner;
 
 public class Array_1st {
 
+	public static String[] F_Array;
+	public static int First_size;
+	
 	public static void Run() {
 		
 		Scanner sc = new Scanner(System.in);	
 
-		System.out.println("1차원 배열의 크기를 정해주세요.");
+		System.out.println("========================");
+		System.out.println("Please specify the size of Array."); // 배열의 크기 정하기.
 		System.out.print("Input > ");
-		int First_size = sc.nextInt();
+		
+		First_size = sc.nextInt(); 
+		F_Array = new String[First_size];
 
-		String[] F_Array = new String[First_size];
-		System.out.printf("[%d] 의 크기를 가진 1차원 배열.\n", First_size);
+		System.out.println("========================");
+		System.out.printf("An Array of a size of [%d] \n", First_size);
 		sc.nextLine();
 
 		// 배열에 값 넣기.
@@ -21,18 +27,31 @@ public class Array_1st {
 		}
 
 		// 배열에 넣어진 값 출력하기.
-		System.out.printf("[%d] Array OutPut \n", First_size);
+		System.out.println("===================");
+		System.out.printf("[%d] Size Array OutPut > \n", First_size);
+	
 		for (int i = 0; i < F_Array.length; i++) {
-			System.out.print("[" + (i + 1) + "] > " + F_Array[i] + " ");
-		}
+			System.out.print("[" + (i + 1) + "] = " + F_Array[i] + " ");
+		}		
 		System.out.println();
-
+		
+		System.out.print("[ ");
+		for (int i = 0 ; i < F_Array.length; i++) {		
+			System.out.print(F_Array[i]+" ");
+		}
+		System.out.print("]\n");
+		
+		System.out.println("=====================");
+		
 		System.out.println("1. 배열 값 역순.");
 		System.out.println("2. 배열 랜덤 뽑기.");
 		System.out.println("3. 배열 랜덤 정렬.");
+		System.out.println("=====================");
 		System.out.print("Input > ");
+		
 		int num = sc.nextInt();
 		int a = 1;
+		
 		Array_Format.Run(num,a);
 		
 		sc.close();

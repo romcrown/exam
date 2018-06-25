@@ -2,16 +2,20 @@ import java.util.Scanner;
 
 public class Array_2st {
 
+	public static int F_Second_size;
+	public static int S_Second_size;
+	public static String [][] S_Array;
+	
 	public static void Run() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("2차원 배열의 [행][]의 크기를 정해주세요.");
 		System.out.print("Input > ");
-		int F_Second_size = sc.nextInt();
+		F_Second_size = sc.nextInt();
 		System.out.println("2차원 배열의 [][열]의 크기를 정해주세요.");
 		System.out.print("Input > ");
-		int S_Second_size = sc.nextInt();
+		S_Second_size = sc.nextInt();
 
-		String[][] S_Array = new String[F_Second_size][S_Second_size];
+		S_Array = new String[F_Second_size][S_Second_size];
 		System.out.printf("[%d][%d] 크기를 가진 2차원 배열. \n", F_Second_size, S_Second_size);
 		System.out.println("=========================");
 		sc.nextLine();

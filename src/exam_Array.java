@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class exam_Array {
@@ -86,6 +87,10 @@ public class exam_Array {
 		}
 		sc.close();
 
+		//Arrays.sort(배열이름); 순서 대로 정렬 해줌.
+		
 	}
+	
+	
 
 }
