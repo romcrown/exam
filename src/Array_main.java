@@ -6,15 +6,21 @@ public class Array_main {
 
 	public static void Run() {
 
+		System.out.println("===== Create Array =====");
+		System.out.println("1. Create 1st Array."); // 1차원 배열 만들기.
+		System.out.println("2. Create 2st Array."); // 2차원 배열 만들기.
+		System.out.println("3. Stop a Create Array.");
+		System.out.println("========================");
+		
 		System.out.print("Input > ");
-
-		// int형에 숫자가 아닌 문자를 넣었을때 오류 처리.
-		while (!sc.hasNextInt()) {
+         /*while (!sc.hasNextInt()) {
 			sc.next();
 			System.out.println("Please input a 1 or 2 or 3.");
 			System.out.print("Input > ");
 			break;
-		}
+		} */
+		// int형에 숫자가 아닌 문자를 넣었을때 오류 처리.
+		
 
 		int input = sc.nextInt();
 
@@ -62,12 +68,8 @@ public class Array_main {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("===== Create Array =====");
-		System.out.println("1. Create 1st Array."); // 1차원 배열 만들기.
-		System.out.println("2. Create 2st Array."); // 2차원 배열 만들기.
-		System.out.println("3. Stop a Create Array.");
-		System.out.println("========================");
-		Array_main.Run();
+		Array_main start = new Array_main() ;
+		start.Run();
 	}
 
 }
