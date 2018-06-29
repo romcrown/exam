@@ -58,7 +58,7 @@ public class Array_Format {
 		String rep;
 		String temp;
 		System.out.println("=====================");
-		System.out.println("1차원 배열 랜덤 뽑기.");
+		System.out.println("1st Random Array Drawing.");
 
 		while (true) {
 
@@ -69,7 +69,7 @@ public class Array_Format {
 				Array_1st.F_Array[a] = temp;
 			}
 
-			System.out.println("랜덤 으로 뽑힌 값 > " + "[" + Array_1st.F_Array[0] + "]");
+			System.out.println("Random Values > " + "[" + Array_1st.F_Array[0] + "]");
 
 			while (true) {
 				System.out.println("Repeat Drawing ? (y,n)");
@@ -107,9 +107,9 @@ public class Array_Format {
 		 * Array_2st.S_Array[i].length ; j++) {
 		 * System.out.print(Array_2st.S_Array[i][j]+" "); } System.out.println(); }
 		 */
-		System.out.println("1. 배열값 역순");
+		System.out.println("1. Reverse Array Value.");
 		System.out.println("=======================");
-		System.out.println("행을 역순으로.");
+		System.out.println("Reverse Row.");
 		System.out.println("output > ");
 
 		for (int i = a - 1; i >= 0; i--) {
@@ -120,7 +120,7 @@ public class Array_Format {
 		}
 
 		System.out.println("=======================");
-		System.out.println("열을 역순으로.");
+		System.out.println("Reverse Column.");
 		System.out.println("output > ");
 
 		for (int q = 0; q < Array_2st.S_Array.length; q++) {
@@ -131,7 +131,7 @@ public class Array_Format {
 		}
 		
 		System.out.println("=======================");
-		System.out.println("행과 열의 숫자를 서로 교체");
+		System.out.println("Change Row And Column");
 		System.out.println("output > ");
 		
 		for(int i = a-1 ; i >= 0 ; i--) {
@@ -148,7 +148,7 @@ public class Array_Format {
 		String rep;
 		String temp;
 		System.out.println("=====================");
-		System.out.println("2차원 배열 랜덤 뽑기.");
+		System.out.println("2st Random Array Drawing.");
 
 		while (true) {
 
@@ -160,7 +160,7 @@ public class Array_Format {
 				Array_2st.S_Array[a][b] = temp;
 			}
 
-			System.out.println("랜덤 으로 뽑힌 값 > " + "[" + Array_2st.S_Array[0][0] + "]");
+			System.out.println("Random Values > " + "[" + Array_2st.S_Array[0][0] + "]");
 
 			while (true) {
 				System.out.println("Repeat Drawing ? (y,n)");
@@ -178,7 +178,7 @@ public class Array_Format {
 
 	//1차원 배열 랜덤 정렬.
 	public static void Array_1st_Random(){
-		System.out.println("배열 랜덤 정렬.");
+		System.out.println("1st Array Random Sort.");
 		System.out.println("=================");
 		
 		int alpa = Array_1st.First_size;
@@ -202,7 +202,7 @@ public class Array_Format {
 	//2차원 배열 랜덤 정렬. 
 	public static void Array_2st_Random() {
 		
-		System.out.println("배열 랜덤 정렬.");
+		System.out.println("2st Array Random Sort.");
 		System.out.println("==================");
 		
 		int alpa = Array_2st.F_Second_size;

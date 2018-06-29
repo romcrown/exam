@@ -51,9 +51,9 @@ public class Array_2st {
 			System.out.println();
 		}
 		System.out.println("=====================");
-		System.out.println("1. 배열 값 역순 (2차원 배열은 행과열 숫자가 바뀜).");
-		System.out.println("2. 배열 랜덤 뽑기.");
-		System.out.println("3. 배열 랜덤 정렬.");
+		System.out.println("1. Reverse Array Value.");
+		System.out.println("2. Random Array Drawing“.");
+		System.out.println("3. Array Rendom Sort.");
 		System.out.print("Input > ");
 		int num = sc.nextInt();
 		int a = 2;

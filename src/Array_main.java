@@ -62,7 +62,7 @@ public class Array_main {
 			Array_2st.Run(); // 2차원 배열 클래스
 			break;
 		default:
-			System.out.println("입력한 값을 다시 확인 해주세요.");
+			System.out.println("Check the entered number");
 		}
 		return 0;
 	}

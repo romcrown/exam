@@ -43,9 +43,9 @@ public class Array_1st {
 		
 		System.out.println("=====================");
 		
-		System.out.println("1. 배열 값 역순.");
-		System.out.println("2. 배열 랜덤 뽑기.");
-		System.out.println("3. 배열 랜덤 정렬.");
+		System.out.println("1. Reverse Array Value.");
+		System.out.println("2. Random Array Drawing.");
+		System.out.println("3. Array Ranom Sort.");
 		System.out.println("=====================");
 		System.out.print("Input > ");
 		
